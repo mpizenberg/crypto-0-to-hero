@@ -4,7 +4,7 @@ import pf.Stdout
 import pf.Task
 
 main =
-    Stdout.line "Call instead: roc test salsa20.roc"
+    Stdout.line "Call instead: roc test 04-salsa20.roc"
 
 # TESTS ########################################################################
 
