@@ -6,9 +6,10 @@ This code is implemented using the Roc language because it is
 pure functional and fully typed while staying very readable and pragmatic.
 So this sounds like a perfect language for learning content.
 
-To run one of the examples, install the Roc compiler (https://www.roc-lang.org/install), and the simply run `roc test` followed by the example you are interested in.
+To run one of the examples, install the Roc compiler (https://www.roc-lang.org/install), and then simply run `roc test` followed by the example you are interested in.
 
 ```sh
+# run all tests for the 02-caesar.roc example
 roc test 02-caesar.roc
 ```
 
