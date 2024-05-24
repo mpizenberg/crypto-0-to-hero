@@ -227,7 +227,8 @@ expect
             [Num.toU8 b3, Num.toU8 b2, Num.toU8 b1, Num.toU8 b0]
         |> List.join
 
-    encrypt input k nonce == output
+    (encrypt input k nonce == output)
+    && (encrypt output k nonce == input)
 
 # IMPLEMENTATION ###############################################################
 
