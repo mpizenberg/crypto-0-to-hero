@@ -205,6 +205,30 @@ expect
     ]
     salsa20k k n == output
 
+## Encryption of an example plaintext
+expect
+    k = List.repeat 0x00 32 |> List.set 0 0x80
+    nonce = List.repeat 0x00 8
+    input = List.repeat 0x00 128
+    output =
+        [
+            [0xe3be8fdd, 0x8beca2e3, 0xea8ef947, 0x5b29a6e7],
+            [0x003951e1, 0x097a5c38, 0xd23b7a5f, 0xad9f6844],
+            [0xb22c9755, 0x9e2723c7, 0xcbbd3fe4, 0xfc8d9a07],
+            [0x44652a83, 0xe72a9c46, 0x1876af4d, 0x7ef1a117],
+            [0x8da2b74e, 0xef1b6283, 0xe7e20166, 0xabcae538],
+            [0xe9716e46, 0x69e2816b, 0x6b20c5c3, 0x56802001],
+            [0xcc1403a9, 0xa117d12a, 0x2669f456, 0x366d6ebb],
+            [0x0f1246f1, 0x265150f7, 0x93cdb4b2, 0x53e348ae],
+        ]
+        |> List.join
+        |> List.map \u32 ->
+            { b0, b1, b2, b3 } = bytes u32
+            [Num.toU8 b3, Num.toU8 b2, Num.toU8 b1, Num.toU8 b0]
+        |> List.join
+
+    encrypt input k nonce == output
+
 # IMPLEMENTATION ###############################################################
 
 ## Wrapping bitwise left rotation for U32 words
