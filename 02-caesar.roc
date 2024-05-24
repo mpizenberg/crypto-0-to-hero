@@ -4,7 +4,7 @@ import pf.Stdout
 import pf.Task
 
 main =
-    Stdout.line! "Call instead: roc test caesar.roc"
+    Stdout.line! "Call instead: roc test 02-caesar.roc"
 
 expect caesar "abc" 1 == Ok "bcd"
 expect caesar "abc" 25 == Ok "zab"
