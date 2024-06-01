@@ -19,3 +19,4 @@ The Twitter series:
 - Episode 02 - Brief history of broken ciphers https://x.com/mattpiz/status/1788846236079997059
 - Episode 03 - XOR https://x.com/mattpiz/status/1790396621345190318
 - Episode 04 - Stream ciphers https://x.com/mattpiz/status/1793657331407814741
+- Episode 05 - Block ciphers https://x.com/mattpiz/status/1795473212878311781
