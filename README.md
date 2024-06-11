@@ -21,3 +21,4 @@ The Twitter series:
 - Episode 04 - Stream ciphers https://x.com/mattpiz/status/1793657331407814741
 - Episode 05 - Block ciphers https://x.com/mattpiz/status/1795473212878311781
 - Episode 06 - Integrity with MAC https://x.com/mattpiz/status/1797628409465688498
+- Episode 07 - Integrity with hashes https://x.com/mattpiz/status/1798283513562849649
